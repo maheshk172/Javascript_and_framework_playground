@@ -1,0 +1,16 @@
+<div>
+    <h2> Landing Page for all my componenets </h2>
+
+    <p>
+        Current Timer count : {{vm.count}}
+    </p>
+
+    <p>
+
+        <input type="text" ng-model="vm.timerInterval" name="timerInterval">
+    </p>
+
+    <button type="button" ng-click="vm.startIncrementTimer(vm.timerInterval)" name="startTimerButton">Start Timer</button>
+    <button type="button" ng-click="vm.stopIncrementTimer()" name="stopTimerButton">Stop Timer</button>
+
+</div>

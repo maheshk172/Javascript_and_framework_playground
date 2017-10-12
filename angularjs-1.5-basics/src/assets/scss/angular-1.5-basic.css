@@ -1,0 +1,158 @@
+/****************************************************
+Variables
+**************************************************/
+/****************************************************
+Mixins
+**************************************************/
+.bg-1 {
+  background: lightblue; }
+
+.bg-2 {
+  background: lightsalmon; }
+
+.bg-3 {
+  background: lightcoral; }
+
+.bg-4 {
+  background: lightgray; }
+
+.bg-5 {
+  background: lightgreen; }
+
+.bg-6 {
+  background: lightcyan; }
+
+.bg-7 {
+  background: lightseagreen; }
+
+.wrap {
+  width: 90%;
+  margin: 0px auto;
+  max-width: 1500px; }
+
+/****************************************************
+mobile Navigation
+**************************************************/
+* {
+  outline: none; }
+
+.title-bar {
+  background-color: #222;
+  height: 60px;
+  padding-top: 17px; }
+
+.off-canvas-wrapper {
+  background-color: #222; }
+
+#mobile-menu {
+  background-color: #222;
+  padding: 10px; }
+  #mobile-menu a {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    line-height: 2; }
+  #mobile-menu a:hover {
+    color: rgba(255, 255, 255, 0.8); }
+
+/****************************************************
+Desktop Navigation
+**************************************************/
+.nav-desktop {
+  background-color: #222;
+  height: 80px;
+  padding: 0px; }
+  .nav-desktop .menu-desktop {
+    line-height: 80px;
+    background-color: transparent; }
+    .nav-desktop .menu-desktop li a {
+      display: inline-block;
+      line-height: 80px;
+      padding-top: 0;
+      padding-bottom: 0;
+      color: white; }
+    .nav-desktop .menu-desktop li a:hover {
+      color: rgba(255, 255, 255, 0.1); }
+
+.site-logo {
+  line-height: 80px;
+  color: white; }
+
+/****************************************************
+HERO Section
+**************************************************/
+/*
+If 4 paras are given
+padding:  top right bottom left
+margin:   top right bottom left
+
+If shorthand, only 2 paras given
+
+padding:  top&bottom right&left
+margin:  top&bottom right&left
+*/
+.hero {
+  background-color: #999;
+  padding: 80px 10px;
+  background-image: url("../img/pattern.png");
+  height: 100%;
+  max-height: 100%; }
+  .hero h1, .hero p {
+    color: white;
+    max-width: 70%; }
+  .hero .hero-main-content {
+    color: #f1f1f1; }
+
+/* play with focus and non focus*/
+.button.success {
+  background-color: purple; }
+
+.button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: inline-block; }
+
+/****************************************************
+Main Section
+**************************************************/
+.main {
+  padding: 80px 10px; }
+
+/****************************************************
+Footer
+**************************************************/
+footer {
+  padding: 80px 10px;
+  background-color: #222; }
+  footer h4 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em; }
+  footer a {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em; }
+    footer a span {
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.3); }
+  footer a:hover {
+    color: rgba(255, 255, 255, 0.8); }
+  footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+/****************************************************
+Media Query
+**************************************************/
+@media (max-width: 639px) {
+  .nav-desktop {
+    display: none; } }
+@media (max-width: 857px) {
+  .hero h1,
+  .hero p {
+    width: 100%; } }
+.log-in-form {
+  border: 1px solid #cacaca;
+  padding: 1rem;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=angular-1.5-basic.cssc.css.map */
