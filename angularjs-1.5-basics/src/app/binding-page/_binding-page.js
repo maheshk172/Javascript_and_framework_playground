@@ -1,7 +1,0 @@
-
-
-
-angular.module('binding-page', []);
-
-
-
