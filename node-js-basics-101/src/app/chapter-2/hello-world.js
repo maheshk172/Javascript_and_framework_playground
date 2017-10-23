@@ -1,4 +1,3 @@
-
 /*
 //synchronized
 function say(filename) {
@@ -7,7 +6,15 @@ function say(filename) {
 
 //A-Synchronized
 function say(filename, cb) {
-    fs.readFile(filename, cb)
+    return fs.readFile(filename, function (error, content) {
+        if (error) {
+            cb(error);
+        } else {
+            setTime(function () {
+                cb(null, contents);
+            }, 1000);
+        }
+    });
 }
 
 var fs = require("fs");
