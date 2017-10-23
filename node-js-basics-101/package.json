@@ -1,0 +1,18 @@
+{
+  "name": "node-js-basics-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asynquence": "^0.10.0",
+    "asynquence-contrib": "^0.28.0",
+    "minimist": "^1.2.0",
+    "node-static": "^0.7.10",
+    "socket.io": "^2.0.4"
+  }
+}
