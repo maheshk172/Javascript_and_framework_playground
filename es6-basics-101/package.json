@@ -1,0 +1,19 @@
+{
+  "name": "es6-basics-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scripts": {
+      "test": "jasmine"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine-browser": "^1.9.1",
+    "gulp-watch": "^4.3.11",
+    "jasmine": "^2.8.0"
+  }
+}
