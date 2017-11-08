@@ -2,8 +2,15 @@ var gulp = require('gulp');
 var jasmineBrowser = require('gulp-jasmine-browser');
 var watch = require('gulp-watch');
 
-gulp.task('jasmine', function() {
-    var filesForTest = ['src/**/*.js', 'spec/**/*.spec.js'];
+gulp.task('jasmine', function () {
+
+    var filesForTest = ['src/05_async_development/**/*.js', 'src/05_async_development/*.spec.js'];
+
+    //var filesForTest = ['src/04_built_in_objects/*.spec.js'];
+    //var filesForTest = ['src/03_functional_Javascript/*.spec.js'];
+    //var filesForTest = ['src/02_classes/*.spec.js'];
+    //var filesForTest = ['src/**/*.js', 'spec/**/*.spec.js'];
+
     return gulp.src(filesForTest)
         .pipe(watch(filesForTest))
         .pipe(jasmineBrowser.specRunner())
