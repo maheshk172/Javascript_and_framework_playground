@@ -4,8 +4,9 @@ var watch = require('gulp-watch');
 
 gulp.task('jasmine', function () {
 
-    var filesForTest = ['src/05_async_development/**/*.js', 'src/05_async_development/*.spec.js'];
-
+    var filesForTest = ['src/07_modules/**/*.js', 'src/07_modules/*.spec.js'];
+    //var filesForTest = ['src/06_objects/**/*.js', 'src/06_objects/*.spec.js'];
+    //var filesForTest = ['src/05_async_development/**/*.js', 'src/05_async_development/*.spec.js'];
     //var filesForTest = ['src/04_built_in_objects/*.spec.js'];
     //var filesForTest = ['src/03_functional_Javascript/*.spec.js'];
     //var filesForTest = ['src/02_classes/*.spec.js'];

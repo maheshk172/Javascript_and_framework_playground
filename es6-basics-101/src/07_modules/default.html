@@ -1,0 +1,32 @@
+<htmL>
+<head>
+
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+
+    <!--script type="module">
+        //Selecting what all you need from Module
+        import {Employee, log, modelEmployee, defaultRaise} from "./employee.js";
+
+        //Single Default module does not need destructutring {} to fetch
+        //import Company from "./company.js";
+
+        //Exporting everything in single variable
+        //PN: This does not work at moment
+        //module m from "./employee.js";
+
+        var e = new Employee("Mahesh");
+        e._name = 'Test';
+        console.log(e.s_name);
+        log(modelEmployee);
+        document.write(e.doWork());
+    </script -->
+
+    <script type="module">
+        import "./main.js";
+    </script>
+
+
+</head>
+</htmL>

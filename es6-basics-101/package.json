@@ -15,5 +15,8 @@
     "gulp-jasmine-browser": "^1.9.1",
     "gulp-watch": "^4.3.11",
     "jasmine": "^2.8.0"
+  },
+  "dependencies": {
+    "traceur": "0.0.111"
   }
 }
