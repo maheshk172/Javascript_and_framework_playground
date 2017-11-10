@@ -1,7 +1,7 @@
 {
-  "name": "javascript-basics",
+  "name": "typescript-basics-101",
   "version": "1.0.0",
-  "description": "Javascript basic examples",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Vending machine simulation</h1>
+        <div class="col-md-8 machine" data-bind="foreach: cells">
+            <div class="col-md-4 cell" data-bind="click: $parent.select, css: {selected: $parent.selectedCell().product === $data.product, sold: sold}">
+                <div class="col-md-6 image">
+                    <img data-bind="attr: {src: product.category.getImageUrl(), alt: product.category.name }" />
+                </div>
+                <div class="col-md-6 productInfo">
+                    <div data-bind="text: product.name"></div>
+                    <h4 data-bind="text: stock"></h4>
+                    <h4 data-bind="text: '$ ' + product.price"></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4>
+                Paid: $
+                <span id="total" data-bind="text: paid"></span>
+            </h4>
+            <div data-bind="foreach: acceptedCoins">
+                <img data-bind="attr: { src: getImageUrl(), alt: value}, click: $parent.acceptCoin" />
+            </div>
+
+            <h3 data-bind="with: selectedCell">
+                <div data-bind="text: product.name"></div>
+                <div>
+                    $
+                    <span data-bind="text: product.price"></span>
+                </div>
+            </h3>
+
+            <button class="btn btn-primary payButton" data-bind="enable: canPay, click: pay">Pay</button>
+    </div>
+
+    <!-- Application Javascript -->
+    <script src="./js/app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
