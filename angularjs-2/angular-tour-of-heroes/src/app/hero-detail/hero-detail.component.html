@@ -1,4 +1,6 @@
 
+
+
 <div *ngIf="hero">
   <h3>{{ hero.name | uppercase }} Details</h3>
   <div><span>id: </span>{{hero.id}}</div>
@@ -10,3 +12,5 @@
         </label>
   </div>
 </div>
+
+<button (click)="goBack()">go back</button>
