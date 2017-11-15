@@ -1,0 +1,12 @@
+<h3> This is Pipes Play </h3>
+<p>The hero's birthday is {{ birthday | date }}</p>
+<br>
+<p>The hero's Name is {{ nameOfKid | uppercase }}</p>
+<br>
+<p>The hero's birthday is {{ birthday | date:"dd-MMM-yyyy" }}</p>
+
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+
+<h3>Chaining the Pipes now </h3>
+<p> The chained hero's birthday is {{ birthday | date | uppercase}} </p>

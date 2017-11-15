@@ -1,0 +1,6 @@
+hr {
+  border-color: red;  
+  border-style: groove;
+  border-width: 2px;
+  border-radius: 2px;
+}
