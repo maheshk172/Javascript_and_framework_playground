@@ -24,7 +24,7 @@ var lineFun = d3.line()   //d3.svg.line() -> d3.svg removed
         return h - d.sales;
     })
     //.interpolate("linear");  -> removed in D3 version 4
-    //.curve(d3.curveLinear); // Plain linear 
+    //.curve(d3.curveLinear); // Plain linear
     .curve(d3.curveBasis);   //more relaxed
 
 var svg = d3.select("body").append("svg").attrs({
